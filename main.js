@@ -16,18 +16,12 @@ const cooldowns = new Discord.Collection();
 
 client.on("ready", () =>{
     console.log(`${client.user.tag} is online`);
-    client.user.setPresence({
-        status: "online",  // online idle dnd
-        game: {
-            name: "~help",  // message shown
-            type: "watching" // playing watching listening streaming
-        }
-    });
+    client.user.setActivity('~help')
  });
 
  client.on('message', message => {
     if (message.mentions.has(client.user)) {
-        console.log(`${client.user.tag}has been mentioned by ${message.author.username}`)
+        console.log(`${client.user.tag}has been mentioned by ${message.author.username} at ${message.createdTimestamp}`)
     }
  });
 
@@ -73,7 +67,7 @@ client.on('message', message => {
 		command.execute(message, args);
 	} catch (error) {
 		console.error(error);
-		message.reply('That command does not exist!\nyet...');
+        message.reply(`There was an error trying to execute that command:\n \`\`\`\n ${error}\n\`\`\``);
     }
 });
 
