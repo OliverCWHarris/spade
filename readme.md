@@ -15,4 +15,6 @@ reload: reloads a command so you don't have to turn the bot off/on to get your n
 serverinfo: gives you information about the server, name; member count; time/date created; region server is located in
 userinfo: gives you information about yourself, username (not nickname) and user id
 
+This program uses Semantic Versioning, see [this website](https://semver.org/)
+
 Soon to be made public on [top.gg](https://top.gg/)
