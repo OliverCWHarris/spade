@@ -21,7 +21,7 @@ client.on("ready", () =>{
 
  client.on('message', message => {
     if (message.mentions.has(client.user)) {
-        console.log(`${client.user.tag}has been mentioned by ${message.author.username} at ${message.createdTimestamp}`)
+        console.log(`${client.user.tag}has been mentioned by ${message.author.username}`)
     }
  });
 

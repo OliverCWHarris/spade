@@ -1,8 +1,12 @@
 module.exports = {
-	name: 'invite',
+	name: 'createinvite',
     cooldown: 60,
 	execute(message, args) {
-        message.channel.createInvite()
-        .then(invite => message.channel.send(`Invite link: https://discord.gg/${invite.code}\nThis will last forever and can be used as many times as you like!`))
+        let options = {
+            maxAge: 3600,
+            maxUses: 1,
+        }
+        message.channel.createInvite(options)
+        .then(invite => message.channel.send(`Invite link: https://discord.gg/${invite.code}\nThis will last for 1 hour and can only be used once!`))
     },
 };
