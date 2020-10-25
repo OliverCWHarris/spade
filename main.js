@@ -17,10 +17,10 @@ const cooldowns = new Discord.Collection();
 client.on("ready", () =>{
     console.log(`${client.user.tag} is online`);
     client.user.setPresence({
-        status: "online",  // You can show online, idle... Do not disturb is dnd
+        status: "online",  // online idle dnd
         game: {
-            name: "~help",  // The message shown
-            type: "watching" // PLAYING, WATCHING, LISTENING, STREAMING,
+            name: "~help",  // message shown
+            type: "watching" // playing watching listening streaming
         }
     });
  });
