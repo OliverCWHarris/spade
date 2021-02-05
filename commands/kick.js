@@ -9,6 +9,6 @@ module.exports = {
 
 		const taggedUser = message.mentions.users.first();
 
-		message.channel.send(`You wanted to kick: ${taggedUser.username}, but you don't have the permissions to do that!`);
+		message.channel.send(`no thats gay, im not removing ${taggedUser.username}`);
 	},
 };

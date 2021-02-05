@@ -1,13 +1,8 @@
 module.exports = {
 	name: '',
-	aliases: ['commands'],
+	aliases: [''],
     cooldown: seconds,
 	execute(message, args) {
 		message.channel.send();
 	},
 };
-
-
-} if (command === '') {
-        client.commands.get('').execute(message, args);
-    }

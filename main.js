@@ -16,7 +16,7 @@ const cooldowns = new Discord.Collection();
 
 client.on("ready", () =>{
     console.log(`${client.user.tag} is online`);
-    client.user.setActivity('~help')
+    client.user.setActivity('[tilde]help')
  });
 
  client.on('message', message => {

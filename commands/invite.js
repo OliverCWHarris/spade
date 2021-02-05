@@ -1,5 +1,6 @@
 module.exports = {
-	name: 'createinvite',
+    name: 'createinvite',
+    aliases: 'ilink',
     cooldown: 60,
 	execute(message, args) {
         let options = {
