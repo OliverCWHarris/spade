@@ -100,7 +100,7 @@ client.login(token);
 
 
 
-//dear futer programmer:
+//dear future programmer:
 //when i wrote this only god and myself knew how it worked
 //now only god knows how it works
 //so please add to this couter to warn any other programmers
