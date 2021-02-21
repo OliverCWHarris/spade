@@ -3,6 +3,22 @@ module.exports = {
 	aliases: [''],
     cooldown: seconds,
 	execute(message, args) {
-		message.channel.send();
+		
 	},
 };
+
+
+git add .
+git commit -m ""
+git push -u origin master
+
+
+if(!args[1]){
+			message.channel.send("I need a link to play dumbass");
+			return;
+			}
+
+if(!message.member.voiceChannel){
+				message.channel.send("You need to be in a voice channel to play music");
+				return;
+			}

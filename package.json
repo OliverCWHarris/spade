@@ -9,6 +9,18 @@
   "author": "me",
   "license": "ISC",
   "dependencies": {
-    "discord.js": "^12.4.0"
+    "@discordjs/opus": "^0.4.0",
+    "@types/node": "^14.14.25",
+    "discord-player": "^3.2.1",
+    "discord-ytdl-core": "^5.0.0",
+    "discord.js": "file:node_modules/discord.js",
+    "merge-options": "^3.0.4",
+    "moment": "^2.29.1",
+    "node-fetch": "^2.6.1",
+    "opusscript": "0.0.7",
+    "soundcloud-scraper": "^4.0.3",
+    "spotify-url-info": "^2.2.0",
+    "youtube-sr": "^3.0.4",
+    "ytdl-core": "^4.4.5"
   }
 }

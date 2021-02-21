@@ -1,6 +1,9 @@
 const fs = require('fs');
 const Discord = require('discord.js');
 const { prefix, token } = require('./config.json');
+const ytdl = require("ytdl-core");
+
+
 
 const client = new Discord.Client();
 client.commands = new Discord.Collection();
@@ -24,6 +27,25 @@ client.on("ready", () =>{
         console.log(`${client.user.tag}has been mentioned by ${message.author.username}`)
     }
  });
+
+ 
+//EXPERIMENTAL COMMAND START
+//
+//client.on("message", async message => {
+//	
+//	if (command === 'play') {
+//		let track = await bot.player.play(message.member.voice.channel, args[0], message.member.user.tag);
+//		message.channel.send('currently playing ${track.name}! - requested by ${track.requestedBy}');
+//
+//	}
+//
+//	if (command === 'stop') {
+//		let track = await bot.player.stop(message.guild.id);
+//		message.channel.send('stopped');
+//		}
+//})
+//
+//EXPERIMENTAL COMMAND END
 
 
  
