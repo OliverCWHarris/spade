@@ -18,7 +18,7 @@ for (const file of commandFiles) {
 const cooldowns = new Discord.Collection();
 
 client.on("ready", () =>{
-    console.log(`${client.user.tag} is online`);
+    console.log(`${client.user.tag} is shoveling!`);
     client.user.setActivity('[tilde]help')
  });
 
